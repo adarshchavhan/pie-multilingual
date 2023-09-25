@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "service_cards",
+  "info": {
+    "singularName": "service-card",
+    "pluralName": "service-cards",
+    "displayName": "serviceCard"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "unique": false,
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true,
+      "maxLength": 100
+    },
+    "link": {
+      "type": "string"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": false
+    }
+  }
+}

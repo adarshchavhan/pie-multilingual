@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "service_sections",
+  "info": {
+    "singularName": "service-section",
+    "pluralName": "service-sections",
+    "displayName": "Service-section",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "serviceCards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::service-card.service-card"
+    }
+  }
+}

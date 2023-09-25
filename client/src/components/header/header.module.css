@@ -1,0 +1,213 @@
+
+.container{
+    background: #fff;
+    height: fit-content;
+}
+
+.topBar{
+    width: 100%;
+    max-width: 1150px;
+    height: 85px;
+    padding: 0 10px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right{
+    flex: 1fr;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.menu{
+    width:fit-content;
+    background: var(--orange);
+    padding: 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 3px 3px 3px 40px;
+    box-shadow: 0 0 5px var(--black);
+}
+
+.menu span{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menuLink{
+    color: var(--white);
+    padding: 3px 10px;
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-right: 1px solid var(--white);
+}
+
+.menuLink:last-child{
+    border-right: none;
+}
+
+.menuLink:hover{
+    color: #000;
+}
+
+.search{
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap:5px;
+}
+
+.searchInput{
+    padding: 10px;
+    border: 1px solid var(--graylight);
+    border-radius: 3px;
+}
+
+.searchBtn{
+    padding: 5px 10px;
+    background: var(--orange);
+    border-radius: 3px;
+}
+
+.bottomBar{
+    height: fit-content;
+    background: var(--sky);
+    display: flex;
+    justify-content: center;
+}
+
+.bottomBarContainer{
+    width: 100%;
+    max-width: 1150px;
+    display: flex;
+}
+
+.bottomBarLink{
+    padding: 10px;
+    color: var(--white);
+    font-size: 13px;
+    font-weight: 600;
+    border-right: 1px solid;
+    width: fit-content;
+}
+.bottomBarLink:hover{
+    background: var(--orange);
+}
+
+
+@media screen and (max-width: 1100px) {
+    .topBar{
+        max-width: 979px;
+    }
+    .bottomBarContainer{
+        width: 979px;
+    }
+    .bottomBarLink{
+        padding: 10px 5px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .logoImg{
+        height: 50px;
+        width: auto;
+    }
+
+    .menuLink{
+        font-size: 10px;
+    }
+
+    .bottomBarContainer{
+        width: 768px;
+    }
+    .bottomBarLink{
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        padding-bottom: 5px;
+        height: fit-content;
+    }
+    .topBar{
+        max-width: 768px;
+        height: fit-content;
+        flex-direction: column;
+        gap: 0px;
+    }
+    
+    .logoImg{
+        height: 70px;
+    }
+
+    .search{
+        display: none;
+    }
+
+    .left{
+        flex: 1fr;
+        width: 100%;
+    }
+    
+    .menu{
+        padding: 5px 20px;
+        border-radius: 3px;
+        text-align: center;
+        margin: auto;
+    }
+    .menuLink{
+        font-size: 12px;
+    }
+
+    .bottomBar{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container{
+        padding: 0;
+    }
+
+    .topBar{
+        padding: 0;
+    }
+
+    .logoImg{
+        width: 100%;
+    }
+
+    .menu{
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    
+
+    .menu span .menuLink{
+        display: none;
+    }
+
+    .menu span .menuLink:last-child{
+        display: flex;
+    }
+}

@@ -1,0 +1,38 @@
+:root{
+  --sky: #43b8c5;
+  --blue: #0098b8;
+  --orange: #ff6600;
+  --white: #ffffff;
+  --black: #00000080;
+  --gray: #444444;
+  --graylight: #cccccc;
+  --light: #f4f4f4;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+button{
+  background: none;
+  border: none;
+  outline: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+input, textarea{
+  font: inherit;
+}

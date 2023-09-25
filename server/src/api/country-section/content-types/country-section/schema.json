@@ -1,0 +1,33 @@
+{
+  "kind": "singleType",
+  "collectionName": "country_sections",
+  "info": {
+    "singularName": "country-section",
+    "pluralName": "country-sections",
+    "displayName": "Country-section",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true,
+      "maxLength": 200
+    },
+    "img": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

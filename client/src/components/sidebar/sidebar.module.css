@@ -1,0 +1,70 @@
+
+.sideButton,
+.closeButton{
+    margin-right: 10px;
+    background: var(--orange);
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.sideButton span,
+.closeButton span{
+    width: 20px;
+    height: 3px;
+    background: #fff;
+    border-radius: 1px;
+}
+
+.closeButton{
+    background: var(--gray);
+}
+
+.sideMenu,
+.closeMenu{
+    width: 400px;
+    height: 100vh;
+    padding-top: 50px;
+    background: var(--gray);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    transition: all .5s ease-in-out;
+}
+
+.closeMenu{
+    left: -400px;
+}
+
+.link{
+    padding: 15px 30px;
+    font-size: 13px;
+}
+
+.link:hover{
+    background: var(--black);
+}
+
+
+.search{
+    padding: 15px 30px;
+}
+
+.input{
+    width: 100%;
+    padding: 12px;
+    border-radius: 24px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .sideButton{
+        display: flex;
+    }
+}
